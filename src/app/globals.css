@@ -22,7 +22,9 @@ body {
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  @supports (text-wrap: balance) {
+    .text-balance {
+      text-wrap: balance;
+    }
   }
 }
